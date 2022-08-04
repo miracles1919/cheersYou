@@ -1,0 +1,12 @@
+.rectangle-love img {
+  width: 80px;
+  height: auto;
+}
+
+.rectangle-love::before {
+  display: none;
+}
+
+.rectangle-love::after {
+  display: none;
+}
