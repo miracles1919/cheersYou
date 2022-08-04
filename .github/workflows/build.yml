@@ -1,0 +1,19 @@
+name: CI Check
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check
+        uses: actions/checkout@v3
+
+      - name: Push docs to the output branch
+        uses: crazy-max/ghaction-github-pages@v2.6.0
+        with:
+          target_branch: build
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
