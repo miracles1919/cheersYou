@@ -5,8 +5,8 @@
   top: 0;
   background: linear-gradient(
     313.01deg,
-    rgba(221, 84, 133, 1),
-    rgba(132, 22, 72, 1) 81.14%
+    #F9496B,
+    #FEB2A5 81.14%
   );
 }
 .heart-fixed {
